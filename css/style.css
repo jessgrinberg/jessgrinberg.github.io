@@ -56,6 +56,8 @@ a:hover {
   	-o-background-size: cover;
   	background-size: cover;	
   	background-color: #f6d8d0;
+
+}
 }
 
 nav {
@@ -76,7 +78,7 @@ p {
 	width: 100vw;*/
 	text-align: right;
 		padding: .25em 2.5em;
-}
+       }
 
 .menuItem {
 	background-color: transparent;
@@ -235,11 +237,20 @@ form .row:first-child .floating-label-form-group {
     color: #DABEBE;
 }
 
+.modal-content {
+    font-size: 24px;
+}
+
 
 
 
 .mini {
-	font-size: 24px;
+	font-size: 26px;
+    text-align: center;
+    letter-spacing: 17px;
+ /*   border: 2px solid;
+    border-radius: 6px;
+    padding: 6px;*/
 }
 
 .label-default {
@@ -284,15 +295,30 @@ h1 small {
 
 
 #appty {
-margin-top: -15px;
-	padding: 10px;
+/*margin-top: -15px;
+	padding: 10px;*/
+    margin: -32px;
+    margin-left: initial;
+    padding: 15px;
 
 }
 
 #movie {
-	padding: 25px;
+    margin: 10px;
+    width: 100%;
 }
 
 #tic {
-	padding: 10px;
+	padding: 5px;
 }
+
+/*#pj {
+    width: 100vw;
+    font-size: 3vw;
+}*/
+
+#pic {
+    padding: 0;
+}
+
+
