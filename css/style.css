@@ -9,6 +9,10 @@ a:hover {
    text-decoration:none;
 }
 
+hr {
+    border:1px solid;
+}
+
 #name {
 	display: block;
 	position: absolute;
@@ -240,6 +244,7 @@ form .row:first-child .floating-label-form-group {
 
 .mini {
 	font-size: 24px;
+    text-align: center;
 }
 
 .label-default {
