@@ -9,6 +9,10 @@ a:hover {
    text-decoration:none;
 }
 
+hr {
+    border:1px solid;
+}
+
 #name {
 	display: block;
 	position: absolute;
