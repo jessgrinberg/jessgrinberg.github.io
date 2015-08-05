@@ -284,6 +284,9 @@ h1 small {
 
 .lead {
 	padding: 25px;
+    font-size: 24px;
+    line-height: 1.6;
+    padding-bottom: 0;
 }
 #main-footer {
     background: black;
@@ -347,5 +350,5 @@ a:-webkit-any-link {
 
 #ga {
     width: 35px;
-    margin-left: -25px;
+/*    margin-left: -25px;*/
 }
