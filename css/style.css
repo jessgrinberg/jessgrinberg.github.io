@@ -352,3 +352,9 @@ a:-webkit-any-link {
     width: 35px;
 /*    margin-left: -25px;*/
 }
+
+#omnifood {
+    width: 90px;
+    height: 90px;
+    margin-top: -25px;
+}
