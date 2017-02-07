@@ -56,6 +56,7 @@ h3 {
 }
 
 .navFlex ul {
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -488,7 +489,7 @@ nav .navFlex {
 
   .nav-title {
     padding: 0 4%;
-    margin: 1.1em 0;
+    margin: 1em 0;
   }
 
   nav #menu-toggle:checked ~ ul {
@@ -503,7 +504,7 @@ nav .navFlex {
     display: block;
     float: right;
     height: 25px;
-    margin-top: 2.25em;
+    margin-top: 2.15em;
     margin-right: 4%;
     width: 35px;
   }
@@ -547,6 +548,12 @@ nav .navFlex {
 
   .translation {
     top: 88.75vh;
+  }
+  .nav-title {
+    margin: .75em 0;
+  }
+  .navFlex .label-toggle {
+    margin-top: 1.80em;
   }
 }
 
