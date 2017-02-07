@@ -70,7 +70,8 @@ h3 {
 
 .navFlex ul a:hover, .social-links a:hover, .translation a:hover,
 .navFlex ul a.active {
-  color: #000;
+ /* color: #000;*/
+ color: rgba(237, 74, 142, 1);
 }
 
 nav li {
@@ -93,27 +94,35 @@ nav .navFlex {
 
 /* ---- INTRO ---- */
 .intro {
-  background: #eee;
   height: 95vh;
   border: 10px solid white;
   margin: 0 auto;
+/*  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(http://www.ventanasvoyage.com/images/Canary%20Islands%20web%20selects/pink%20cactus.jpg);
+*/
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), 
+  url(http://www.ventanasvoyage.com/images/Canary%20Islands%20web%20selects/green%20cactus%20w%20pink.jpg);
+
 }
 
 .introBox {
   margin: 0 auto;
   max-width: 960px;
-  padding: 35vh 2%;
+/*  padding: 35vh 2%;*/
+  padding: 22.5vh 2%;
 }
 
 .introBox h1 {
   line-height: 2em;
-  color: rgba(0, 0, 0,0.9);
+  color: #FFF;
 }
 
 .introBox p {
-  max-width: 600px;
-  font-size: 2em;
+ /* max-width: 750px;*/
+  max-width: 900px;
+  font-size: 2.325em;
   line-height: 1.325em;
+  font-weight: 700;
+  color: #FFF;
 }
 
 .translation {
@@ -164,12 +173,14 @@ nav .navFlex {
 
 .work:nth-child(odd) {
   /*background: #CDC3B0;*/
-  background: #00889b;
+ /* background: #00889b;*/
+ background: rgba(106,103,101, .65);
 }
 
 .work:nth-child(even) {
   /*background: #AB9E85;*/
-  background: #00798a;
+  /*background: #00798a;*/
+  background: rgba(106,103,101, .85);
 }
 
 .work-details h3 {
@@ -186,7 +197,8 @@ nav .navFlex {
 }
 
 .work-details .github:hover {
-  color: rgba(0,0,0,0.6)
+ /* color: rgba(0,0,0,0.6)*/
+  color: rgba(237, 74, 142, 1);
 }
 
 .work-details {
@@ -222,7 +234,8 @@ nav .navFlex {
 
 .more-projects a {
   /*border: 3px solid #CDC3B0;*/
-  border: 3px solid #00798a;
+/*  border: 3px solid #00798a;*/
+  border: 3px solid rgba(237, 74, 142, 1);
   padding: 20px;
   display: block;
   font-family: 'Oswald', sans-serif;
@@ -231,7 +244,8 @@ nav .navFlex {
 }
 
 .more-projects a:hover {
-  background: #00798a;
+ /* background: #00798a;*/
+  background: rgba(237, 74, 142, .85);
   color: #FFF;
 }
 
@@ -246,18 +260,21 @@ nav .navFlex {
 }
 
 .education {
-  background: #F6D8D0;
+  /*background: #F6D8D0;*/
+  background: rgba(106,103,101, .25);
   flex:1;
 }
 
 .skills {
-  background: #D3A69B;
+  /*background: #D3A69B;*/
+  background: rgba(106,103,101, .45);
   flex:1;
 }
 
 .experience {
   flex:1;
-  background: #FFF1ED;
+  /*background: #FFF1ED;*/
+  background: rgba(106,103,101, .05);
 }
 
 .exp {
@@ -311,7 +328,7 @@ nav .navFlex {
 .horizontal-line {
   display: block;
   height: 1px;
-  background: #313131;
+  background: rgba(237, 74, 142, 1);
   margin: 20px auto;
   width: 30px;
   opacity: .3;
@@ -439,7 +456,7 @@ nav .navFlex {
   }
 
   .introBox {
-    padding: 30vh 5%;
+    padding: 25vh 5%;
   }
 
   .introBox p {
