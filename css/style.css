@@ -64,14 +64,12 @@ h3 {
 }
 
 .navFlex ul a, .social-links a{
-  /*color: rgba(0,0,0,0.6);*/
   color: #000;
   transition: all 0.5s ease;
 }
 
 .navFlex ul a:hover, .social-links a:hover, .translation a:hover,
 .navFlex ul a.active {
- /* color: #000;*/
  color: rgba(237, 74, 142, 1);
 }
 
@@ -108,7 +106,6 @@ nav .navFlex {
   margin: 0 auto;
   max-width: 960px;
   padding: 35vh 2%;
- /* padding: 22.5vh 2%;*/
 }
 
 .introBox h1 {
@@ -118,7 +115,6 @@ nav .navFlex {
 
 .introBox p {
   max-width: 750px;
-  /*max-width: 900px;*/
   font-size: 2.325em;
   line-height: 1.325em;
   font-weight: 700;
@@ -147,7 +143,6 @@ nav .navFlex {
   transform: scale(1.05)
 }
 
-
 /* ---- WORK SECTION ---- */
 
 .work-container {
@@ -172,15 +167,13 @@ nav .navFlex {
 }
 
 .work:nth-child(odd) {
-  /*background: #CDC3B0;*/
- /* background: #00889b;*/
  background: rgba(106,103,101, .45);
+ background: rgba(41, 62, 29, 0.65);
 }
 
 .work:nth-child(even) {
-  /*background: #AB9E85;*/
-  /*background: #00798a;*/
   background: rgba(106,103,101, .65);
+  background: rgba(41, 62, 29, 0.75);
 }
 
 .work-details h3 {
@@ -197,7 +190,6 @@ nav .navFlex {
 }
 
 .work-details .github:hover {
- /* color: rgba(0,0,0,0.6)*/
   color: rgba(237, 74, 142, 1);
 }
 
@@ -233,8 +225,6 @@ nav .navFlex {
 }
 
 .more-projects a {
-  /*border: 3px solid #CDC3B0;*/
-/*  border: 3px solid #00798a;*/
   border: 3px solid rgba(237, 74, 142, 1);
   color: rgba(237, 74, 142, 1);
   padding: 20px;
@@ -245,7 +235,6 @@ nav .navFlex {
 }
 
 .more-projects a:hover {
- /* background: #00798a;*/
   background: rgba(237, 74, 142, .9);
   color: #FFF;
 }
@@ -261,27 +250,18 @@ nav .navFlex {
 }
 
 .education {
-  /*background: #F6D8D0;*/
-  /*background: rgba(106,103,101, .25);*/
-  /*background: rgba(237, 74, 142, .1);*/
   flex:1;
-  background: rgba(41, 62, 29, 0.5)
+  background: rgba(41, 62, 29, 0.45)
 }
 
 .skills {
-  /*background: #D3A69B;*/
- /* background: rgba(106,103,101, .45);*/
- /* background: rgba(237, 74, 142, .3);*/
   flex:1;
-  background: rgba(41, 62, 29, 0.65)
+  background: rgba(41, 62, 29, 0.60)
 }
 
 .experience {
   flex:1;
-  /*background: #FFF1ED;*/
- /* background: rgba(106,103,101, .05);*/
- /* background: rgba(237, 74, 142, .2);*/
- background: rgba(41, 62, 29, 0.35)
+  background: rgba(41, 62, 29, 0.3)
 }
 
 .exp {
@@ -481,7 +461,7 @@ nav .navFlex {
   }
 
   .contact-container h2 {
-  font-size: 3em;
+    font-size: 3em;
   }
 
   .contact-container .email {
@@ -515,11 +495,6 @@ nav .navFlex {
     font-size: 1.5em;
     padding: 2em 0;
   }
-
-/*  .nav-title {
-    padding: 0 4%;
-    margin: 1em 0;
-  }*/
 
   nav #menu-toggle:checked ~ ul {
     opacity: 1;
@@ -566,7 +541,53 @@ nav .navFlex {
   }
 }
 
-@media (min-width: 431px) and (max-width: 768px) {
+@media  (min-width: 569px) and (max-width: 768px) and (orientation:landscape){ 
+  .navBar, nav .navFlex {
+    height: 20vh;
+  }
+  .nav-title {
+    padding: 0 4%;
+    margin: 1.125em 0 0 0;
+  }
+
+  .introBox p {
+    font-size: 1.5em;
+  }
+
+  .translation {
+    top: 80vh;
+  }
+
+  .navFlex li {
+    padding: 1em 0;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 568px) and (orientation:landscape){ 
+  .navBar, nav .navFlex {
+    height: 25vh;
+  }
+  .nav-title {
+    padding: 0 4%;
+    margin: 1.125em 0 0 0;
+  }
+
+  .introBox p {
+    font-size: 1.25em;
+  }
+
+  .translation {
+    top: 81vh;
+  }
+
+  .navFlex li {
+    padding: .65em 0;
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 768px) and (orientation:portrait) {
   .nav-title {
     padding: 0 4%;
     margin: 1.125em 0;
@@ -579,7 +600,7 @@ nav .navFlex {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 430px) and (orientation:portrait) {
   .intro {
     background-position-y: -25vh;
   }
@@ -596,11 +617,16 @@ nav .navFlex {
   }
   .nav-title {
     font-size: 1.75em;
-    margin: 1em 5%;
+    margin: 0.95em 5%;
   }
   .navFlex .label-toggle {
     margin: 1.8em 5%;
     width: 30px;
+  }
+
+  .navFlex li {
+    padding: 1em 0;
+    font-size: 1.5em;
   }
 }
 
