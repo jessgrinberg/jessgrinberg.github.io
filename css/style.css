@@ -50,15 +50,30 @@ h3 {
   max-width: 960px;
   padding: 0 2%;
   height: 20vh;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
   align-items:center;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
   justify-content:space-between;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
 .navFlex ul {
   z-index: 1000;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
   list-style: none;
   width: 50%;
 }
@@ -70,7 +85,7 @@ h3 {
 
 .navFlex ul a:hover, .social-links a:hover, .translation a:hover,
 .navFlex ul a.active {
- color: rgba(237, 74, 142, 1);
+  color: rgba(237, 74, 142, 1);
 }
 
 nav li {
@@ -86,9 +101,18 @@ nav .label-toggle {
 }
 
 nav .navFlex {
-  align-items: center;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
+  align-items:center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
 }
 
 /* ---- INTRO ---- */
@@ -99,7 +123,6 @@ nav .navFlex {
   background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), 
   url(http://www.ventanasvoyage.com/images/Canary%20Islands%20web%20selects/green%20cactus%20w%20pink.jpg);
   background-position-y: 15vh; 
-
 }
 
 .introBox {
@@ -140,7 +163,7 @@ nav .navFlex {
 .translation:hover{
   background: #000;
   color: #FFF;
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 /* ---- WORK SECTION ---- */
@@ -150,19 +173,31 @@ nav .navFlex {
 }
 
 .projects {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
 .work{
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding: 0% 5%;
   height: 80vh;
 }
 
 .work-details {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  -moz-justify-content:center;
+  -ms-justify-content:center;
+  -webkit-justify-content:center;
+  justify-content:center;
   height: 80vh;
 }
 
@@ -219,9 +254,18 @@ nav .navFlex {
 .more-projects {
   height: 20vh;
   width: 100%;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
   align-items:center;
-  justify-content: center;
+  -moz-justify-content:center;
+  -ms-justify-content:center;
+  -webkit-justify-content:center;
+  justify-content:center;
 }
 
 .more-projects a {
@@ -242,25 +286,40 @@ nav .navFlex {
 /* ---- EXPERIENCE ---- */
 
 .experience-flex {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
 .eduskills {
+  -moz-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex:2;
   flex: 2;
 }
 
 .education {
-  flex:1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex:1;
+  flex: 1;
   background: rgba(41, 62, 29, 0.45)
 }
 
 .skills {
-  flex:1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex:1;
+  flex: 1;
   background: rgba(41, 62, 29, 0.60)
 }
 
 .experience {
-  flex:1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex:1;
+  flex: 1;
   background: rgba(41, 62, 29, 0.3)
 }
 
@@ -292,9 +351,19 @@ nav .navFlex {
 
 .contact-container {
   height: 100vh;
-  display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
-  justify-content: center;
+  -moz-justify-content:center;
+  -ms-justify-content:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
   align-items:center;
   position: relative;
 }
@@ -364,7 +433,10 @@ nav .navFlex {
 .project-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
 }
 
 .project-body ul {
@@ -428,10 +500,15 @@ nav .navFlex {
     height: 100%;
   }
   .projects, .experience-flex {
+    webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
   .eduskills {
+    -moz-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex:2;
     flex: 2;
   }
 
@@ -629,6 +706,3 @@ nav .navFlex {
     font-size: 1.5em;
   }
 }
-
-
-
