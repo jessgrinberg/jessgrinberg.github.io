@@ -120,9 +120,9 @@ nav .navFlex {
   height: 95vh;
   border: 10px solid white;
   margin: 0 auto;
-  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), 
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),
   url(http://www.ventanasvoyage.com/images/Canary%20Islands%20web%20selects/green%20cactus%20w%20pink.jpg);
-  background-position-y: 15vh; 
+  background-position-y: 15vh;
 }
 
 .introBox {
@@ -350,7 +350,7 @@ nav .navFlex {
 /* ---- CONTACT ---- */
 
 .contact-container {
-  height: 100vh;
+  height: 110vh;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -474,7 +474,7 @@ nav .navFlex {
 
 .project-list-item .github:hover {
   color: rgba(237, 74, 142, 1);
-} 
+}
 
 .project-list-item > * {
   padding: 1em 0;
@@ -618,7 +618,7 @@ nav .navFlex {
   }
 }
 
-@media  (min-width: 569px) and (max-width: 768px) and (orientation:landscape){ 
+@media  (min-width: 569px) and (max-width: 768px) and (orientation:landscape){
   .navBar, nav .navFlex {
     height: 20vh;
   }
@@ -641,7 +641,7 @@ nav .navFlex {
   }
 }
 
-@media (max-width: 568px) and (orientation:landscape){ 
+@media (max-width: 568px) and (orientation:landscape){
   .navBar, nav .navFlex {
     height: 25vh;
   }
