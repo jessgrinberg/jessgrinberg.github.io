@@ -1,0 +1,708 @@
+/* ---- GLOBAL ---- */
+
+header {
+  height: 100vh;
+}
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h3, h4 {
+  text-transform: uppercase;
+}
+
+h3 {
+  letter-spacing: .1em;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+ h4 {
+  font-weight: 700;
+}
+
+/* ---- NAVIGATION ---- */
+.navBar {
+  line-height: 2em;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  position: fixed;
+  z-index: 1000;
+  min-width: 100%;
+  height: 20vh;
+  background: white;
+  letter-spacing: 0.15em;
+}
+
+.nav-title {
+  font-size: 2em;
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.navFlex {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 2%;
+  height: 20vh;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
+  align-items:center;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.navFlex ul {
+  z-index: 1000;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
+  list-style: none;
+  width: 50%;
+}
+
+.navFlex ul a, .social-links a{
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.navFlex ul a:hover, .social-links a:hover, .translation a:hover,
+.navFlex ul a.active {
+  color: rgba(237, 74, 142, 1);
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav #menu-toggle {
+  display: none;
+}
+
+nav .label-toggle {
+  display: none;
+}
+
+nav .navFlex {
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
+  align-items:center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
+}
+
+/* ---- INTRO ---- */
+.intro {
+  height: 95vh;
+  border: 10px solid white;
+  margin: 0 auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),
+  url(http://www.ventanasvoyage.com/images/Canary%20Islands%20web%20selects/green%20cactus%20w%20pink.jpg);
+  background-position-y: 15vh;
+}
+
+.introBox {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 35vh 2%;
+}
+
+.introBox h1 {
+  line-height: 2em;
+  color: #FFF;
+}
+
+.introBox p {
+  max-width: 750px;
+  font-size: 2.325em;
+  line-height: 1.325em;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.translation {
+  display: inline-block;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 52.5vh;
+  margin: 0;
+  padding: 20px;
+  border-radius: 2px;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  transition: all 1s;
+}
+
+.translation:hover{
+  background: #000;
+  color: #FFF;
+  transform: scale(1.05);
+}
+
+/* ---- WORK SECTION ---- */
+
+.work-container {
+  height: 100vh;
+}
+
+.projects {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.work{
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0% 5%;
+  height: 80vh;
+}
+
+.work-details {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -moz-justify-content:center;
+  -ms-justify-content:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  height: 80vh;
+}
+
+.work:nth-child(odd) {
+ background: rgba(106,103,101, .45);
+ background: rgba(41, 62, 29, 0.65);
+}
+
+.work:nth-child(even) {
+  background: rgba(106,103,101, .65);
+  background: rgba(41, 62, 29, 0.75);
+}
+
+.work-details h3 {
+  color: #FFF;
+  transition: all 1s;
+}
+
+.work-details h3:hover {
+  padding-left: .25em;
+}
+
+.work-details .github {
+  transition: all .5s;
+}
+
+.work-details .github:hover {
+  color: rgba(237, 74, 142, 1);
+}
+
+.work-details {
+  line-height: 1.3;
+  font-size: 1.1em;
+  color: #FFF;
+}
+
+.work-details i {
+  font-size: 2em;
+}
+
+.work-details  a {
+  font-weight: 700;
+  color: #FFF;
+}
+
+.work-details > * {
+  padding: 1em 0;
+}
+
+.work-details .tags {
+  font-style: italic;
+}
+
+.more-projects {
+  height: 20vh;
+  width: 100%;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
+  align-items:center;
+  -moz-justify-content:center;
+  -ms-justify-content:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+}
+
+.more-projects a {
+  border: 3px solid rgba(237, 74, 142, 1);
+  color: rgba(237, 74, 142, 1);
+  padding: 20px;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.15em;
+  transition: all .3s;
+}
+
+.more-projects a:hover {
+  background: rgba(237, 74, 142, .9);
+  color: #FFF;
+}
+
+/* ---- EXPERIENCE ---- */
+
+.experience-flex {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.eduskills {
+  -moz-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex:2;
+  flex: 2;
+}
+
+.education {
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex:1;
+  flex: 1;
+  background: rgba(41, 62, 29, 0.45)
+}
+
+.skills {
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex:1;
+  flex: 1;
+  background: rgba(41, 62, 29, 0.60)
+}
+
+.experience {
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex:1;
+  flex: 1;
+  background: rgba(41, 62, 29, 0.3)
+}
+
+.exp {
+  border: 10px solid #FFF;
+  padding: 2.5em 2% 3.5em;
+  font-size: 1.1em;
+  line-height: 1.2;
+  transition: border 1s;
+}
+
+.exp:hover {
+  border: 10px solid rgba(0, 0, 0,0.1);
+}
+
+.exp ul > * {
+  padding: 10px 0;
+}
+
+.experience-flex h3 {
+  padding: 15px 0;
+}
+
+.experience-flex h5 {
+  font-style: italic;
+}
+
+/* ---- CONTACT ---- */
+
+.contact-container {
+  height: 110vh;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content:center;
+  -ms-justify-content:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -webkit-align-items:center;
+  align-items:center;
+  position: relative;
+}
+
+.contact-container h2 {
+  font-size: 4em;
+}
+
+.contact-container .email {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.contact-container .social-links a {
+  font-size: 1.5em;
+}
+
+.horizontal-line {
+  display: block;
+  height: 1px;
+  background: rgba(237, 74, 142, 1);
+  margin: 20px auto;
+  width: 30px;
+  opacity: .3;
+}
+
+.social-links {
+  margin: 50px auto;
+}
+
+.social-links a:nth-child(1), .social-links a:nth-child(2) {
+  padding-right: 10px;
+}
+
+/* ---- PROJECT ---- */
+
+.project-header a {
+  border: 2px solid #000;
+  font-family: oswald;
+  font-size: 1.3em;
+  padding: .5em;
+  text-align: center;
+  display: inline-block;
+  margin: 1em 0 0 2.5em;
+  position: absolute;
+  color: #000;
+  transition: all 0.5s ease-out;
+}
+
+.project-header a:hover {
+  color: rgba(237, 74, 142, 1);
+  border-color: rgba(237, 74, 142, 1);
+  margin-left: 2.25em;
+}
+
+
+.project-header h1 {
+  border-bottom: 5px solid #000;
+  padding: 0px 0 1% 0;
+  margin: 2.5em 0em 0 1em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-family: 'Oswald';
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  -moz-justify-content:space-between;
+  -ms-justify-content:space-between;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
+}
+
+.project-body ul {
+  margin: 4em 0 0 5em;
+}
+
+.project-list .tags {
+  font-style: italic;
+}
+
+.project-list-item {
+  padding: 1em 5% 1em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.project-list-item h3 a {
+  color: rgba(41, 62, 29, .85);
+  transition: all .5s;
+}
+
+.project-list-item h3 a:hover {
+  padding-left: .25em;
+}
+
+.project-list-item p {
+  font-size: 1.2em;
+}
+
+.project-list-item .github {
+  font-size: 1.3em;
+  display: inline-block;
+  transition: all .5s;
+  color: #000;
+}
+
+.project-list-item .github:hover {
+  color: rgba(237, 74, 142, 1);
+}
+
+.project-list-item > * {
+  padding: 1em 0;
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (min-width: 769px) and (max-width: 925px) {
+  .translation {
+    top: 65vh;
+  }
+
+  .intro {
+    background-position-y: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .translation {
+    top: 89vh;
+  }
+  .work-container {
+    height: 100%;
+  }
+  .projects, .experience-flex {
+    webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .eduskills {
+    -moz-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex:2;
+    flex: 2;
+  }
+
+  .exp {
+    border: 10px solid rgba(0, 0, 0,0);
+  }
+
+  .exp:hover {
+     border: 10px solid rgba(0, 0, 0,0.1);
+  }
+
+  .intro {
+    background-position-y: 0vh;
+  }
+
+  .introBox {
+    padding: 25vh 5%;
+  }
+
+  .introBox p {
+    max-width: 500px;
+    font-size: 2em;
+  }
+
+  .translation {
+    top: 89vh;
+  }
+
+  .contact-container h2 {
+    font-size: 3em;
+  }
+
+  .contact-container .email {
+    font-size: 1.5em;
+  }
+
+  .contact-container .social-links a {
+    font-size: 1.25em;
+  }
+
+  .navFlex, .navBar {
+    height: 15vh;
+  }
+
+  .navFlex ul {
+    background-color: white;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all .5s ease;
+    width: 100%;
+    visibility: hidden;
+    padding: 0;
+  }
+
+  .navFlex li {
+    color: black;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+  }
+
+  .navFlex .label-toggle {
+    background: linear-gradient(to bottom, black 0%, black 20%, transparent 20%, transparent 40%, black 40%, black 60%, transparent 60%, transparent 80%, black 80%, black 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 25px;
+    margin-top: 2.15em;
+    margin-right: 4%;
+    width: 35px;
+  }
+
+  nav .navFlex {
+    display: block;
+    padding: 0 0%;
+    height: 15vh;
+  }
+
+  .project-header h1 {
+    margin-left: .5em;
+    font-size: 2em;
+  }
+
+  .project-header a {
+    border: 1px solid rgba(0,0,0,0.6);
+    margin: .75em 0 0 1em;
+    font-size: 1.1em;
+  }
+
+  .project-header a:hover {
+    color: #000;
+    margin-left: 0.75em;
+  }
+
+  .project-body ul {
+    margin: 1em 0 0 2em;
+    max-width: 90%;
+  }
+}
+
+@media  (min-width: 569px) and (max-width: 768px) and (orientation:landscape){
+  .navBar, nav .navFlex {
+    height: 20vh;
+  }
+  .nav-title {
+    padding: 0 4%;
+    margin: 1.125em 0 0 0;
+  }
+
+  .introBox p {
+    font-size: 1.5em;
+  }
+
+  .translation {
+    top: 80vh;
+  }
+
+  .navFlex li {
+    padding: 1em 0;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 568px) and (orientation:landscape){
+  .navBar, nav .navFlex {
+    height: 25vh;
+  }
+  .nav-title {
+    padding: 0 4%;
+    margin: 1.125em 0 0 0;
+  }
+
+  .introBox p {
+    font-size: 1.25em;
+  }
+
+  .translation {
+    top: 81vh;
+  }
+
+  .navFlex li {
+    padding: .65em 0;
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 768px) and (orientation:portrait) {
+  .nav-title {
+    padding: 0 4%;
+    margin: 1.125em 0;
+  }
+  .navFlex .label-toggle {
+    margin-top: 2.5em;
+  }
+  .intro {
+    background-position-y: 0vh;
+  }
+}
+
+@media (max-width: 430px) and (orientation:portrait) {
+  .intro {
+    background-position-y: -25vh;
+  }
+  .introBox p {
+    max-width: 400px;
+    font-size: 1.4em;
+  }
+  .introBox {
+    padding: 20vh 5%;
+  }
+
+  .translation {
+    top: 88.75vh;
+  }
+  .nav-title {
+    font-size: 1.75em;
+    margin: 0.95em 5%;
+  }
+  .navFlex .label-toggle {
+    margin: 1.8em 5%;
+    width: 30px;
+  }
+
+  .navFlex li {
+    padding: 1em 0;
+    font-size: 1.5em;
+  }
+}
